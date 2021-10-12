@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function PostPage({frontmatter: {title, date, cover_image}, slug, content}) {
     return (
@@ -13,7 +14,7 @@ export default function PostPage({frontmatter: {title, date, cover_image}, slug,
            <div className='rounded-lg shadow-sm border-2 mr-4 hover:shadow-lg card-page py-4 px-7'>
         <h1 className='text-3xl my-3'>{title}</h1>
         <div className='mb-5 py-1 px-3 bg-gray-50'>Posted on {date}</div>
-        <img src={cover_image} alt='' className="rounded"/>
+        <Image src={cover_image} alt='' className="rounded"/>
         <div className='mx-auto max-w-4xl text-xl font-bold my-3 text-justify p-2'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>

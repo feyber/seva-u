@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
     return (
@@ -13,7 +14,7 @@ export default function Footer() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div>
                     <Link href='/' passHref>
-                    <img src='googleplay.png'className='cursor-pointer' width={45}/>
+                    <Image src='googleplay.png'className='cursor-pointer' width={45} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>
@@ -24,7 +25,7 @@ export default function Footer() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div className='mr-2'>
                     <Link href='/' passHref>
-                    <img src='ios.png'className='cursor-pointer' width={35}/>
+                    <Image src='ios.png'className='cursor-pointer' width={35} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>

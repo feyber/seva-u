@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import Post from '../components/Post'
 import {sortByDate} from '../utils'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 export default function Home({posts}) {
@@ -20,28 +21,28 @@ export default function Home({posts}) {
         <div className='mt-8 flex flex-row max-w-4xl'>
         <div className='mr-2 relative'>
                     <Link href='/' passHref>
-                    <img src='banner4.png'className='cursor-pointer' width={369}/>
+                    <Image src='banner4.png'className='cursor-pointer' width={369}alt=''/>
                     </Link>
             <div className='absolute container top-2 w-8 h-8 bg-white rounded-lg left-4'>
-            <img src='favicon.ico'/>
+            <Image src='favicon.ico' alt=''/>
             </div>
             <div className='absolute bottom-4 text-white left-2 font-thin'>Get Es.150 on First Rs.500 Order from App</div>
         </div>
         <div className='mr-2 relative'>
                     <Link href='/' passHref>
-                    <img src='banner5.png'className='cursor-pointer' width={369}/>
+                    <Image src='banner5.png'className='cursor-pointer' width={369} alt=''/>
                     </Link>
                     <div className='absolute container top-2 w-8 h-8 bg-white rounded-lg left-4'>
-            <img src='favicon.ico'/>
+            <Image src='favicon.ico' alt=''/>
             </div>
                     <div className='absolute bottom-4 text-white left-2 font-thin'>Get Es.150 on First Rs.500 Order from App</div>
         </div>
         <div className='mr-2 relative'>
                     <Link href='/' passHref>
-                    <img src='banner6.png'className='cursor-pointer' width={369}/>
+                    <Image src='banner6.png'className='cursor-pointer' width={369} alt=''/>
                     </Link>
                     <div className='absolute container top-2 w-8 h-8 bg-white rounded-lg left-4'>
-            <img src='favicon.ico'/>
+            <Image src='favicon.ico' alt=''/>
             </div>
                     <div className='absolute bottom-4 text-white left-2 font-thin'>Get Es.150 on First Rs.500 Order from App</div>
         </div>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import useDarkMode from "./useDarkMode";
+import Image from 'next/image';
 
 export default function Header() {
   const [colorTheme, setTheme] = useDarkMode();
@@ -13,7 +14,7 @@ export default function Header() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div>
                     <Link href='/' passHref>
-                    <img src='googleplay.png'className='cursor-pointer' width={45}/>
+                    <Image src='googleplay.png'className='cursor-pointer' width={45} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>
@@ -24,7 +25,7 @@ export default function Header() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div className='mr-2'>
                     <Link href='/' passHref>
-                    <img src='ios.png'className='cursor-pointer' width={35}/>
+                    <Image src='ios.png'className='cursor-pointer' width={35} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>
@@ -42,22 +43,22 @@ export default function Header() {
           <p className='text-blue-900 mb-2'> Best Fruits, Vegetables and Grocery</p>
         </div>
         <div className='flex flex-row mb-2'>
-        <img src='telp.png' width={20} className='mr-2' />
+        <Image src='telp.png' width={20} className='mr-2' alt='' />
         <p className='text-blue-900'>Phone Number: +44 7425508676</p>
         </div>
         <div className='flex flex-row'>
-        <img src='location.png' width={20} className='mr-2' />
+        <Image src='location.png' width={20} className='mr-2'alt='' />
         <p className='text-blue-900'>(52 chiswick wharf, london) </p>
         </div>
         </div>
         <div className='mx-auto w-1/2 flex flex-row justify-center items-center'>
           <div className='container bg-gray-200 rounded-lg mr-2'>
-          <img src='bannervideo.png' width={350}/>
+          <Image src='bannervideo.png' width={350} alt=''/>
           </div>
           <div className='mr-2'>Please click on the download <Link href='/blog/test' passHref><a className='text-blue-500'>link</a></Link> from mobile to install app and get deals.</div>
         </div>
         </div>
-        <img src='fotomarket.png'className='cursor-pointer'/>
+        <Image src='fotomarket.png'className='cursor-pointer' alt=''/>
         
         </div>
         
