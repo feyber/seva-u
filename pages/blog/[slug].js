@@ -14,7 +14,7 @@ export default function PostPage({frontmatter: {title, date, cover_image}, slug,
            <div className='rounded-lg shadow-sm border-2 mr-4 hover:shadow-lg card-page py-4 px-7'>
         <h1 className='text-3xl my-3'>{title}</h1>
         <div className='mb-5 py-1 px-3 bg-gray-50'>Posted on {date}</div>
-        <Image src={cover_image} alt='' className="rounded"/>
+        <Image src={cover_image} alt='' className="rounded" width={960} height={600}/>
         <div className='mx-auto max-w-4xl text-xl font-bold my-3 text-justify p-2'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>

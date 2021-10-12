@@ -21,28 +21,28 @@ export default function Home({posts}) {
         <div className='mt-8 flex flex-row max-w-4xl'>
         <div className='mr-2 relative'>
                     <Link href='/' passHref>
-                    <Image src='banner4.png'className='cursor-pointer' width={369}alt=''/>
+                    <Image src='/banner4.png'className='cursor-pointer' width={369} height={190} alt=''/>
                     </Link>
             <div className='absolute container top-2 w-8 h-8 bg-white rounded-lg left-4'>
-            <Image src='favicon.ico' alt=''/>
+            <Image src='/favicon.ico' alt='' width={32} height={32}/>
             </div>
             <div className='absolute bottom-4 text-white left-2 font-thin'>Get Es.150 on First Rs.500 Order from App</div>
         </div>
         <div className='mr-2 relative'>
                     <Link href='/' passHref>
-                    <Image src='banner5.png'className='cursor-pointer' width={369} alt=''/>
+                    <Image src='/banner5.png'className='cursor-pointer' width={369} height={190} alt=''/>
                     </Link>
                     <div className='absolute container top-2 w-8 h-8 bg-white rounded-lg left-4'>
-            <Image src='favicon.ico' alt=''/>
+            <Image src='/favicon.ico' alt='' width={32} height={32}/>
             </div>
                     <div className='absolute bottom-4 text-white left-2 font-thin'>Get Es.150 on First Rs.500 Order from App</div>
         </div>
         <div className='mr-2 relative'>
                     <Link href='/' passHref>
-                    <Image src='banner6.png'className='cursor-pointer' width={369} alt=''/>
+                    <Image src='/banner6.png'className='cursor-pointer' width={369} height={190} alt=''/>
                     </Link>
                     <div className='absolute container top-2 w-8 h-8 bg-white rounded-lg left-4'>
-            <Image src='favicon.ico' alt=''/>
+            <Image src='/favicon.ico' alt='' width={32} height={32}/>
             </div>
                     <div className='absolute bottom-4 text-white left-2 font-thin'>Get Es.150 on First Rs.500 Order from App</div>
         </div>

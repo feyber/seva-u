@@ -5,6 +5,9 @@ export default function Header() {
     return (
     <header>
         <div className=' flex justify-center items-center'>
+        <div className='relative'>
+        <Image src='/fotomarket.png'width={1920} height={486} alt=''/>
+        </div>
         <div className='absolute mb-12 text-white font-bold'>
           <h1>Please click on the Button Bellow from mobile to install app and get deals.</h1>
         </div>
@@ -12,7 +15,7 @@ export default function Header() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div>
                     <Link href='/' passHref>
-                    <Image src='googleplay.png'className='cursor-pointer' width={45} alt=''/>
+                    <Image src='/googleplay.png'className='cursor-pointer' width={45} height={45} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>
@@ -23,7 +26,7 @@ export default function Header() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div className='mr-2'>
                     <Link href='/' passHref>
-                    <Image src='ios.png'className='cursor-pointer' width={35} alt=''/>
+                    <Image src='/ios.png'className='cursor-pointer' width={35} height={35} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>
@@ -41,23 +44,21 @@ export default function Header() {
           <p className='text-blue-900 mb-2'> Best Fruits, Vegetables and Grocery</p>
         </div>
         <div className='flex flex-row mb-2'>
-        <Image src='telp.png' width={20} className='mr-2' alt='' />
+        <Image src='/telp.png' width={20} height={20}className='mr-2' alt='' />
         <p className='text-blue-900'>Phone Number: +44 7425508676</p>
         </div>
         <div className='flex flex-row'>
-        <Image src='location.png' width={20} className='mr-2'alt='' />
+        <Image src='/location.png' width={20} height={20}className='mr-2'alt='' />
         <p className='text-blue-900'>(52 chiswick wharf, london) </p>
         </div>
         </div>
         <div className='mx-auto w-1/2 flex flex-row justify-center items-center'>
           <div className='container bg-gray-200 rounded-lg mr-2'>
-          <Image src='bannervideo.png' width={350} alt=''/>
+          <Image src='/bannervideo.png' width={300} height={180} alt=''/>
           </div>
           <div className='mr-2'>Please click on the download <Link href='/blog/test' passHref><a className='text-blue-500'>link</a></Link> from mobile to install app and get deals.</div>
         </div>
         </div>
-        <Image src='fotomarket.png'className='cursor-pointer' alt=''/>
-        
         </div>
         
     </header>

@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div>
                     <Link href='/' passHref>
-                    <Image src='googleplay.png'className='cursor-pointer' width={45} alt=''/>
+                    <Image src='/googleplay.png'className='cursor-pointer' width={45} height={45} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>
@@ -25,7 +25,7 @@ export default function Footer() {
                 <div className='flex m-1 w-36 h-12 bg-white rounded-full justify-center items-center'>
                     <div className='mr-2'>
                     <Link href='/' passHref>
-                    <Image src='ios.png'className='cursor-pointer' width={35} alt=''/>
+                    <Image src='/ios.png'className='cursor-pointer' width={35} height={35} alt=''/>
                     </Link>
                     </div>
                     <div className='mr-2'>
