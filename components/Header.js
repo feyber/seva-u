@@ -1,9 +1,7 @@
 import Link from 'next/link'
-import useDarkMode from "./useDarkMode";
 import Image from 'next/image';
 
 export default function Header() {
-  const [colorTheme, setTheme] = useDarkMode();
     return (
     <header>
         <div className=' flex justify-center items-center'>
